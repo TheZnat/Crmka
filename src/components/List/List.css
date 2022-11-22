@@ -1,0 +1,67 @@
+.list {
+  margin-bottom: 30px;
+}
+.list__add-button {
+  opacity: 0.4;
+}
+.list__add-button:hover {
+  opacity: 1;
+}
+.list__remove-icon {
+  opacity: 0;
+}
+.list li {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px 12px;
+}
+.list li:hover .list__remove-icon {
+  opacity: 0.2;
+}
+.list li:hover .list__remove-icon .list__remove-icon {
+  opacity: 0;
+}
+.list li:hover .list__remove-icon:hover {
+  opacity: 0.8;
+}
+.list li span {
+  flex: 1;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 160px;
+  white-space: nowrap;
+}
+.list li:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.list li.active {
+  background: #ffffff;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+}
+.list i {
+  margin-right: 8px;
+  display: inline-flex;
+}
+.list i svg path {
+  fill: #7c7c7c;
+}
+.list .badge {
+  width: 10px;
+  height: 10px;
+  border-radius: 30px;
+  position: relative;
+  left: 5px;
+}
+.list .badge--green {
+  background-color: #42b883;
+}
+.list .badge--blue {
+  background-color: #64C4ED;
+}
+.list .badge--pink {
+  background-color: #FFBBCC;
+}
+
+/*# sourceMappingURL=List.css.map */
